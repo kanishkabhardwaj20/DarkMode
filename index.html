@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+<title>SViNKi Tech Website Demo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=2">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+
+.header h1 {
+  font-size: 30px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #000a08;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+}
+
+
+
+
+
+.navbar a:hover {
+  background-color: #333;
+  color: black;
+}
+
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+
+
+
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  padding: 20px;
+}
+
+
+
+
+.footer {
+  padding: 10px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 200px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+    <script src="speech.js"></script>
+
+</head>
+<body id="voice-cmd">
+<center>	
+<div style="height:5%;">
+</div>
+<div id="voice-rec" width="102px"height="102px">
+      <input type="button" id="voice-on" disabled value="Speak" onclick="speech.start()"/>
+      <input type="button" id="voice-off" disabled value="Cancel" onclick="speech.stop()"/>
+      <p>
+        Press "speak" and say the mode you would like to look your website <br><h3>( dark mode on ) / ( dark mode off )</h3>
+      </p>
+    </div>
+<div style="height:5%;">
+</div>
+<div style="width:80%;border: 1px dashed;">
+<div class="header" id="voice-cmd1" style="background-color:white;">
+    <img align="top" src="pnglogo.png" width="102px"height="102px" alt="SViNKi Tech logo">
+<h1>SViNKi Tech Presents</h1>
+  <p>Speech recognition system to turn on dark mode</p>
+</div> 
+
+<div class="navbar" id="voice-cmd2">
+  <a href="#">HOME</a>
+  <a href="#">ABOUT</a>
+  <a href="#">CONTACT</a>
+  
+</div>
+
+
+  <div class="main" id="voice-cmd1">
+   <div style="padding-left:100px;padding-right:100px;">
+    				<h2 style="font-family: 'Vesper Libre', serif;font-size:45px;color:#e85155;text-align:center;">About Us</h2>
+    				<p style="font-family: 'Assistant', sans-serif;font-size:20px;">Vision of <b>Svinki Tech</b> is purely service-oriented. It's major domain comprises of Website Development, Android Application Development,
+ IVR, Digital Marketing, Content Writing and Machine Learning services.
+</p><p style="font-family: 'Assistant', sans-serif;font-size:20px;">
+Svinki Tech aims to have crystal clear knowledge of their customers, 
+tends to make strategic decisions to better serve their consumers. We are a customer data platform, that provides intelligent capabilities 
+to work efficiently towards the technologies which are booming on a high pace in a modern market. 
+</p><p style="font-family: 'Assistant', sans-serif;font-size:20px;">
+We make our best that our work culture, connected clients 
+and our precious experience denotes diversity and global connectivity for the future and build a thriving community, that work together towards the 
+change of way of live life.<br /><br /><br /><br /><br /></p>
+    			</div>
+  </div>
+
+<div id="voice-cmd3" class="footer">
+      <p style="font-family: 'Assistant', sans-serif;font-size:15px;">
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Design & Developed By <a href="http://www.svinkitech.co.in/" target="_blank" style="text-decoration:none;color:#e85155;">Svinki Team</a>
+ </p>
+			  
+</div>
+</div>
+</center>
+</body>
+</html>
